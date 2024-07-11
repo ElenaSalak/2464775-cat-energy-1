@@ -16,22 +16,13 @@
       <div class="container">
         <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__menu">
-            <div class="main-header__logo-wrapper">
-              <a class="main-header__logo-pic logo-pic" href="#">
-                <picture>
-                  <source media="(min-width: 1440px)" type="image/svg+xml" srcset="img/logo-pic-desktop.svg" width="70" height="59">
-                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/logo-pic-tablet.svg" width="60" height="50">
-                  <img class="logo-pic__img" src="img/logo-pic.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
-                </picture>
-              </a>
-              <a class="main-header__logo-text logo-text" href="#">
-                <picture>
-                  <source media="(min-width: 1440px)" type="image/svg+xml" srcset="img/logo-text-tablet.svg" width="118" height="21">
-                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/logo-text-tablet.svg" width="101" height="18">
-                  <img class="logo-text__img" src="img/logo-text.svg" width="101" height="18" alt="Текстовый логотип Кэт энерджи">
-                </picture>
-              </a>
-            </div>
+            <a class="main-nav__logo" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="img/logo-desktop.svg" width="202" height="59">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/logo-tablet.svg" width="174" height="50">
+                <img src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи.">
+              </picture>
+            </a>
             <button class="main-nav__toggle button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -143,7 +134,7 @@
               </div>
             </div>
             <div class="case__toggles slider__toggles">
-              <button class="slider__toggle" type="button">
+              <button class="slider__toggle slider__toggle--bg" type="button">
                 <span class="visually-hidden">Перелистнуть слайдер влево</span>
                 <svg width="8" height="18" viewBox="0 0 8 18">
                   <use href="img/sprite.svg#toggle-less" />
@@ -168,6 +159,11 @@
             <address class="map__address">Санкт-Петербург</address>
           </div>
         </div>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="map__static" src="img/map-mobile.jpg" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x" width="320" height="362" alt="Статичная карта.">
+        </picture>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15988.135857319334!2d30.302254914751263!3d59.94015677015943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716721759382!5m2!1sru!2sru"
         style="border: 0;"
         allowfullscreen=""
@@ -182,7 +178,9 @@
         <footer class="main-footer">
           <div class="main-footer__wrapper">
             <a class="main-footer__logo-text logo-text" href="#">
-              <img class="logo-text__img" src="img/logo-text.svg" width="128" height="24" alt="Текстовый логотип Кэт энерджи">
+              <svg width="101" height="18" viewBox="0 0 101 18">
+                <use href="img/sprite.svg#logo-text" />
+              </svg>
             </a>
             <ul class="main-footer__socials socials">
               <li class="socials__item">

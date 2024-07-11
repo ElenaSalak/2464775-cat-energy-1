@@ -250,6 +250,8 @@
 }
 
 .form__text-icon {
+  position: relative;
+
   input {
     font-family: @add-font;
     font-size: 16px;
@@ -259,15 +261,16 @@
     cursor: pointer;
   }
 
-  &--mail {
-    input {
-      background-image: url("../img/mail-icon.svg");
-    }
-  }
+  svg {
+    position: absolute;
+    right: 12px;
 
-  &--phone {
-    input {
-      background-image: url("../img/phone-icon.svg");
+    @media (min-width: @tablet-width) {
+      right: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 16px;
     }
   }
 
@@ -275,6 +278,10 @@
     padding-bottom: 0;
     min-width: 569px;
   }
+}
+
+.form__text-icon input:focus + svg {
+  color: @basic-green;
 }
 
 .form__list .form__text-field:last-child {

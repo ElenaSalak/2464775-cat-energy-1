@@ -16,22 +16,13 @@
       <div class="container">
         <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__menu">
-            <div class="main-header__logo-wrapper">
-              <a class="main-header__logo-pic logo-pic" href="index.html">
-                <picture>
-                  <source media="(min-width: 1440px)" type="image/svg+xml" srcset="img/logo-pic-desktop.svg" width="70" height="59">
-                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/logo-pic-tablet.svg" width="60" height="50">
-                  <img class="logo-pic__img" src="img/logo-pic.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
-                </picture>
-              </a>
-              <a class="main-header__logo-text logo-text" href="index.html">
-                <picture>
-                  <source media="(min-width: 1440px)" type="image/svg+xml" srcset="img/logo-text-tablet.svg" width="118" height="21">
-                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/logo-text-tablet.svg" width="101" height="18">
-                  <img class="logo-text__img" src="img/logo-text.svg" width="101" height="18" alt="Текстовый логотип Кэт энерджи">
-                </picture>
-              </a>
-            </div>
+            <a class="main-nav__logo" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="img/logo-desktop.svg" width="202" height="59">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/logo-tablet.svg" width="174" height="50">
+                <img src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи.">
+              </picture>
+            </a>
             <button class="main-nav__toggle button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -105,13 +96,19 @@
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__caption form__caption--contacts form__caption--line">Контактные данные (владельца кота)</legend>
             <ul class="form__list form__list--contacts">
-              <li class="form__text-field form__text-icon form__text-icon--mail">
+              <li class="form__text-field form__text-icon">
                 <label class="form__text-label" for="email">E-mail:*</label>
                 <input class="form__text-input" type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <use href="img/sprite.svg#mail-icon" />
+                </svg>
               </li>
-              <li class="form__text-field form__text-icon form__text-icon--phone">
+              <li class="form__text-field form__text-icon">
                 <label class="form__text-label" for="number">Телефон:*</label>
                 <input class="form__text-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <use href="img/sprite.svg#phone-icon" />
+                </svg>
               </li>
             </ul>
           </fieldset>
@@ -169,7 +166,9 @@
         <footer class="main-footer">
           <div class="main-footer__wrapper">
             <a class="main-footer__logo-text logo-text" href="#">
-              <img class="logo-text__img" src="img/logo-text.svg" width="128" height="24" alt="Текстовый логотип Кэт энерджи">
+              <svg width="101" height="18" viewBox="0 0 101 18">
+                <use href="img/sprite.svg#logo-text" />
+              </svg>
             </a>
             <ul class="main-footer__socials socials">
               <li class="socials__item">

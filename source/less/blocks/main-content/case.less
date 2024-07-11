@@ -177,38 +177,6 @@
   &--after {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 4px;
-      height: 256px;
-      background-color: @icon-gray;
-      border-radius: 2px;
-      top: 0;
-      left: 50%;
-
-      @media (min-width: @tablet-width) {
-        height: 512px;
-      }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      background-color: @white-color;
-      border-radius: 50%;
-      border: 2px solid @icon-gray;
-      top: 108px;
-      z-index: 1;
-
-      @media (min-width: @tablet-width) {
-        top: 236px;
-      }
-    }
   }
 }
 
