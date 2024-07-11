@@ -1,7 +1,7 @@
 .map__wrapper-text {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0 26px;
+  padding: 28px 20px 26px;
 
   @media (min-width: @tablet-width) {
     padding: 60px 40px;
@@ -72,6 +72,7 @@
 .map {
   position: relative;
   min-height: 474px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     min-height: 598px;
@@ -84,7 +85,7 @@
   iframe {
     position: absolute;
     display: block;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
     height: 362px;
     right: 0;

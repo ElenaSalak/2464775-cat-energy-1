@@ -50,55 +50,6 @@
     }
   }
 
-  &--hero {
-    position: relative;
-
-    @media (max-width: (@tablet-width - 1px)) {
-      background-image: url("../img/hero-bg.jpg");
-      background-repeat: no-repeat;
-      background-position: center top;
-
-      &::after {
-        content: "";
-        background-color: fade(@basic-green, 85%);
-        width: 100vw;
-        height: 302px;
-        position: absolute;
-        top: 0;
-        left: -20px;
-        z-index: -1;
-      }
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero-bg@2x.jpg");
-        background-size: 320px auto;
-      }
-    }
-
-    @media (min-width: @desktop-width) {
-      &::before {
-        content: "";
-        position: absolute;
-        background-image: url("../img/hero-bg-desktop.jpg");
-        width: 720px;
-        height: 694px;
-        background-repeat: no-repeat;
-        z-index: -1;
-        top: -118px;
-        right: 0;
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../img/hero-bg-desktop@2x.jpg");
-          background-size: 720px 694px;
-        }
-      }
-    }
-  }
-
-  &--map {
-    background-color: @gray;
-  }
-
   &--instruction {
     @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
       position: relative;
