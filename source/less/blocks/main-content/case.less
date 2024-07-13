@@ -186,10 +186,20 @@
 
 .case__before {
   clip-path: inset(0 50% 0 0);
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .case__after {
   clip-path: inset(0 0 0 50%);
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .case {
