@@ -55,14 +55,6 @@
   padding: 22px 0 24px;
   position: relative;
 
-  &:hover {
-    opacity: 60%;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
-
   @media (min-width: @tablet-width) {
     padding: 0 0 16px 0;
   }
@@ -80,6 +72,7 @@
     &::before {
       content: "";
       background-color: @mercury-gray-color;
+      box-shadow: -20px 0 0 @mercury-gray-color;
       height: 1px;
       position: absolute;
       top: 0;
@@ -122,6 +115,18 @@
       }
     }
   }
+
+  &:hover {
+    box-shadow: -20px 0 0 @white-color, 20px 0 0 @white-color;
+
+    a {
+      opacity: 60%;
+    }
+  }
+
+  &:active a {
+    opacity: 30%;
+  }
 }
 
 .site-list li:last-child {
@@ -129,6 +134,7 @@
     &::after {
       content: "";
       background-color: @mercury-gray-color;
+      box-shadow: -20px 0 0 @mercury-gray-color;
       height: 1px;
       position: absolute;
       top: 65px;

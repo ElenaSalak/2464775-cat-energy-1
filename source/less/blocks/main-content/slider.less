@@ -8,69 +8,43 @@
   }
 }
 
-.slider__toggles {
-  display: flex;
-  justify-content: space-between;
-  min-width: 24px;
-  position: absolute;
-  top: 119px;
-  right: calc(50% - 13px);
-  z-index: 1;
-
-  button {
-    padding-inline: 0;
-    padding: 0;
-  }
-
-  @media (min-width: @tablet-width) {
-    top: 247px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 317px;
-  }
-}
-
 .slider__toggle {
-  display: flex;
-  width: 8px;
-  height: 18px;
   color: @icon-gray;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
 
-  &--bg {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 4px;
-      height: 256px;
-      background-color: @icon-gray;
-      border-radius: 2px;
-      top: -125px;
-      z-index: -2;
-      left: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    background-color: @icon-gray;
+    border-radius: 2px;
+    top: -125px;
+    left: 17px;
+    z-index: -2;
 
-      @media (min-width: @tablet-width) {
-        height: 512px;
-        top: -256px;
-      }
+    @media (min-width: @tablet-width) {
+      height: 512px;
+      top: -256px;
     }
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      background-color: @white-color;
-      border-radius: 50%;
-      border: 2px solid @icon-gray;
-      top: -10px;
-      left: -8px;
-      z-index: -1;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: @white-color;
+    border-radius: 50%;
+    border: 2px solid @icon-gray;
+    top: -10px;
+    left: 0;
+    z-index: -1;
   }
 
   svg {
@@ -95,15 +69,12 @@
     color: @green-hover;
     opacity: 60%;
 
-
     &::after {
-      color: @green-hover;
-      opacity: 60%;
+      background-color: @green-hover;
     }
 
     &::before {
-      color: @green-hover;
-      opacity: 60%;
+      border-color: @green-hover;
     }
   }
 }
