@@ -1,7 +1,13 @@
 .map__wrapper-text {
   display: flex;
   justify-content: space-between;
-  padding: 28px 20px 26px;
+  padding: 26px 20px;
+
+  &--bg {
+    @media (max-width: (@desktop-width - 1px)) {
+      background-color: @gray;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 60px 70px;
