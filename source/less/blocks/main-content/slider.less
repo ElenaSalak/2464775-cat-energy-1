@@ -14,8 +14,12 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    top: 48%;
+  }
 
   &::after {
     content: "";
@@ -24,13 +28,13 @@
     height: 256px;
     background-color: @icon-gray;
     border-radius: 2px;
-    top: -125px;
+    top: -118px;
     left: 17px;
     z-index: -2;
 
     @media (min-width: @tablet-width) {
       height: 512px;
-      top: -256px;
+      top: -245px;
     }
   }
 
@@ -43,7 +47,7 @@
     border-radius: 50%;
     border: 2px solid @icon-gray;
     top: -10px;
-    left: 0;
+    left: -2px;
     z-index: -1;
   }
 
