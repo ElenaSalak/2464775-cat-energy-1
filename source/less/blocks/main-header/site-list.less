@@ -68,6 +68,7 @@
     background-color: @white-color;
     box-shadow: -20px 0 0 @white-color, 20px 0 0 @white-color;
     text-align: center;
+    padding-right: 20px;
 
     &::before {
       content: "";
@@ -117,7 +118,9 @@
   }
 
   &:hover {
-    box-shadow: -20px 0 0 @white-color, 20px 0 0 @white-color;
+    @media (max-width: (@tablet-width - 1px)) {
+      box-shadow: -20px 0 0 @white-color, 20px 0 0 @white-color;
+    }
 
     a {
       opacity: 60%;
