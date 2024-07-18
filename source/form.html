@@ -99,6 +99,7 @@
               <li class="form__text-field form__text-icon">
                 <label class="form__text-label" for="email">E-mail:*</label>
                 <input class="form__text-input" type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+                <!-- Применить класс "form__text-input--invalid", чтобы проверить на валидность -->
                 <svg width="20" height="20" viewBox="0 0 20 20">
                   <use href="img/sprite.svg#mail-icon" />
                 </svg>
@@ -106,6 +107,7 @@
               <li class="form__text-field form__text-icon">
                 <label class="form__text-label" for="number">Телефон:*</label>
                 <input class="form__text-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
+                <!-- Применить класс "form__text-input--invalid", чтобы проверить на валидность -->
                 <svg width="20" height="20" viewBox="0 0 20 20">
                   <use href="img/sprite.svg#phone-icon" />
                 </svg>
@@ -201,9 +203,8 @@ allowfullscreen="" title="Офис компании по адресу ул. Бо
               </li>
             </ul>
             <div class="main-footer__copyright copyright">
-              <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              <a class="copyright__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
-                <span class="visually-hidden">Сайт HTML Academy</span>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="copyright__text">HTML Academy</span>
                 <svg width="27" height="34" viewBox="0 0 27 34">
                   <use href="img/sprite.svg#academy-icon" />
                 </svg>

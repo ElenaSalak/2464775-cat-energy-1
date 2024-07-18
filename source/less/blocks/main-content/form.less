@@ -197,6 +197,14 @@
     border-color: @color-error;
   }
 
+  &--invalid {
+    border: 2px solid @color-error;
+  }
+
+  &--invalid + svg {
+    color: @color-error;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 10px 19px;
   }
@@ -267,6 +275,10 @@
 
 .form__text-icon input:focus + svg {
   color: @basic-green;
+}
+
+.form__text-icon input:disabled + svg {
+  color: @color-error;
 }
 
 .form__list .form__text-field:last-child {

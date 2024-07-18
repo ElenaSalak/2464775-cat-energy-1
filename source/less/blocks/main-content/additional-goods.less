@@ -53,8 +53,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    border-bottom: 1px solid @border-color;
-    grid-column: 1 / 2;
+    li:last-child {
+      border-bottom: 1px solid @border-color;
+    }
   }
 }
 

@@ -1,7 +1,4 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-
   @media (min-width: @tablet-width) {
     align-items: center;
   }
@@ -14,13 +11,21 @@
       color: @basic-green;
     }
 
-    &:active svg {
+    &:active {
       opacity: 30%;
     }
   }
 }
 
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .copyright__text {
+  color: @primary-color;
+
   @media (min-width: @tablet-width) {
     padding-right: 23px;
   }
