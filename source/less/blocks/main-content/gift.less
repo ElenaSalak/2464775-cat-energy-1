@@ -1,36 +1,25 @@
 .gift {
-  background-color: fade(@basic-green, 85%);
-  max-height: 290px;
+  position: relative;
+  min-height: 290px;
+  padding-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 
   @media (min-width: @tablet-width) {
-    max-height: 200px;
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 245px;
-  }
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  padding-bottom: 35px;
-
-  @media (min-width: @tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     align-items: center;
+    padding-top: 70px;
+    padding-left: 77px;
+    min-height: 200px;
+    align-content: end;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    position: absolute;
-    top: 193px;
-    right: 110px;
-    max-height: 288px;
     padding: 0;
+    min-height: 288px;
+    align-content: start;
   }
 }
 
@@ -40,59 +29,62 @@
   color: @white-color;
   margin: 0;
   max-width: 161px;
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-  z-index: 2;
-  margin-top: 48px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    z-index: 2;
-    margin: -8px 0 0 -60px;
     text-align: left;
+    margin-left: 142px;
+    margin-bottom: -8px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
-    z-index: 2;
     text-align: center;
-    margin: -5px 0 0;
+    width: 100%;
+    margin: 0 auto 10px;
   }
 }
 
 .gift__icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 57px;
+  margin-bottom: 49px;
+  width: 100%;
   color: @white-color;
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-  z-index: 2;
-  margin-top: 59px;
 
   @media (min-width: @tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-    z-index: 2;
-    margin: -14px 0 0 -119px;
+    width: min-content;
+    margin: 0;
+    margin-bottom: -6px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    align-self: end;
-    margin-bottom: 10px;
+    width: 100%;
+    margin: 0;
+    margin-top: 56px;
+    margin-bottom: 48px;
   }
 }
 
 
 .gift__pic {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  z-index: 1;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: @basic-green;
+
+  @media (min-width: @tablet-width) {
+    top: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
 }

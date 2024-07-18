@@ -16,6 +16,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 0;
     box-shadow: -40px 0 0 0 @white-color, 40px 0 0 0 @white-color;
+    grid-column: 1 / -1;
   }
 
   &::before {
@@ -53,6 +54,7 @@
 
   @media (min-width: @desktop-width) {
     border-bottom: 1px solid @border-color;
+    grid-column: 1 / 2;
   }
 }
 
@@ -65,6 +67,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto 245px;
+    grid-auto-rows: auto;
     padding: 76px 0 87px;
   }
 }

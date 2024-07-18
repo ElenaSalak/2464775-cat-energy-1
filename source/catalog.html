@@ -288,21 +288,20 @@
               <button class="add-card__button button" type="submit">Заказать</button>
             </li>
           </ul>
-        </section>
-        <section class="gift">
-          <h2 class="visually-hidden">Подарок за заказ</h2>
-          <svg class="gift__icon" width="78" height="81" viewBox="0 0 78 81">
-            <use href="img/sprite.svg#gift-icon" />
-          </svg>
-          <p class="gift__thesis">Закажите все<br> и получите чехол для кота в подарок!</p>
-          <div class="gift__pic">
+          <div class="gift">
+            <div class="gift__icon">
+              <svg width="78" height="81" viewBox="0 0 78 81">
+                <use href="img/sprite.svg#gift-icon" />
+              </svg>
+            </div>
+            <p class="gift__thesis">Закажите все<br> и получите чехол для кота в подарок!</p>
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/gift-bg-desktop.webp 1x, img/gift-bg-desktop@2x.webp 2x" width="245" height="288">
               <source media="(min-width: 1440px)" srcset="img/gift-bg-desktop.jpg 1x, img/gift-bg-desktop@2x.jpg 2x" width="245" height="288">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/gift-bg-tablet.webp 1x, img/gift-bg-tablet@2x.webp 2x" width="707" height="200">
               <source media="(min-width: 768px)" srcset="img/gift-bg-tablet.jpg 1x, img/gift-bg-tablet@2x.jpg 2x" width="707" height="200">
               <source type="image/webp" srcset="img/gift-bg.webp 1x, img/gift-bg@2x.webp 2x">
-              <img src="img/gift-bg.jpg" srcset="img/gift-bg@2x.jpg 2x" width="280" height="290" alt="Чехол для кота в подарок">
+              <img class="gift__pic" src="img/gift-bg.jpg" srcset="img/gift-bg@2x.jpg 2x" width="280" height="290" alt="Чехол для кота в подарок">
             </picture>
           </div>
         </section>
