@@ -1,3 +1,16 @@
+.main-footer {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: @gray;
+    right: 0;
+    bottom: 0;
+    box-shadow: 100vw 0 0 @gray;
+  }
+}
+
 .main-footer__wrapper {
   display: grid;
   row-gap: 40px;
@@ -65,8 +78,4 @@
   margin-left: 0;
   display: flex;
   justify-content: center;
-}
-
-.container-footer {
-  background-color: @gray;
 }
